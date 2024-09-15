@@ -43,11 +43,15 @@ public class ChatBox extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String mensagem = questao.getText();
-                String respostaIA = "null-null";
-                respostaIA = Service_Gemini.enviarQuestao(mensagem);
+                String respostaIA = "";
                 dialogo.append("Você: " + mensagem + "\n");
-                dialogo.append("IA: " + respostaIA + "\n");
                 questao.setText("");
+                try{
+                    respostaIA = Service_Gemini.sendText(mensagem);
+                    dialogo.append("IA: " + respostaIA + "\n");
+                }catch (Exception exc){
+                    dialogo.append("ERROR: Ocorreu algum erro: \n");
+                }
             }
         });
 

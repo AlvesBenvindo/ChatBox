@@ -9,6 +9,5 @@ public class Main {
     public static void main(String[] args) {
 
         new ChatBox(serviceGemini);
-        //System.out.println(serviceGemini.enviarQuestao("234"));
     }
 }
