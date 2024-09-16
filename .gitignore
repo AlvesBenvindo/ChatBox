@@ -3,7 +3,7 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-/src/resources/app.properties
+src/resources/app.properties
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
