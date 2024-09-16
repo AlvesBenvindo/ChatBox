@@ -2,9 +2,10 @@ package digra.dev.bind_IA.servico_IA;
 
 import digra.dev.bind_IA.ConversorJSON;
 import digra.dev.http.ConectorREST;
+import digra.dev.envroiments_variables.GetProperties;
 
 public class Service_Gemini {
-    private static final String apiKey = "AIzaSyC1Ak8D0vr-6g2aBknxtEqkvss6ntv9fCs";
+    private static final String apiKey = GetProperties.getValue("ia.gemini.api.key");
     private static final String apiURL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=";
 
     public static String sendText(String texto) {

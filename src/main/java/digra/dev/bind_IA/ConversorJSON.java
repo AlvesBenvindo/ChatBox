@@ -46,7 +46,7 @@ public class ConversorJSON {
                                             if (resposta.charAt(m) == '['){
                                                 for (int n = m; n < resposta.length(); n++) {
                                                     if (resposta.charAt(n) == '{'){
-                                                        for (int p = 0, o = n; o < resposta.length(); o++, p++) {
+                                                        for (int o = n; o < resposta.length(); o++) {
                                                             if (resposta.charAt(o) == '}') return subString;
                                                             subString += resposta.charAt(o);
                                                         }
