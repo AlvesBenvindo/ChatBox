@@ -1,7 +1,5 @@
 package digra.dev.bind_IA.servico_IA;
 
-
-import java.net.URLEncoder;
 import digra.dev.bind_IA.ConversorJSON;
 import digra.dev.http.ConectorREST;
 
